@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+              height: 100vh;
+              background-color: red;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+        }
+        .parent:hover{
+            /* justify-content: space-between; */
+        }
+        .childOne{
+            background-color: yellow;
+            height: 300px;
+            width: 300px;
+        }
+        .childOne:hover{
+            transform: rotate(50deg);
+            transition: 8s;
+            transform: translateX(90px);
+            box-shadow: 10px 10px 10px black;
+        }
+        .childTwo:hover{
+            transition: 2s;
+            transform: translateY(90px);
+            box-shadow: 10px 10px 10px black;
+        }
+        .childTwo{
+            background-color: green;
+            height: 300px;
+            width: 300px;
+        }
+        .logo{
+            display: flex;
+        }
+        .menu{
+            display: flex;
+            gap: 30px;
+        }
+        nav{
+            display: flex;
+            background-image: url(https://www.sciencealert.com/images/2021-08/processed/planet_nine_explainer_cover_art_nasa_1024.jpg);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 10px 15px 15px black;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+        }
+        li:hover{
+            background-color: green;
+            cursor: pointer;
+        }
+        ul{
+            display: flex;
+            align-items: end;
+            gap: 10px;
+            list-style-type:none;
+            font-size: large;
+            color:white;
+            gap: 60px;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu
+        
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+     <nav>
+        <div class="logo">
+            <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="">
+     </div>
+    
+    
+     <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>contact</li>
+            <li>next page</li>
+            <li>help</li>
+            </ul>
+     </div>
+        </nav>
+    <!--flexbox  -->
+    <!-- <div class="parent">
+        <div class="childOne">
+    </div>
+    <div class="childTwo">
+   </div>
+   </div> -->
+</body>
+</html>
