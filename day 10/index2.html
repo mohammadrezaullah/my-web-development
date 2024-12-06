@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create an object
+        const person = {
+            FirstName: "John",
+            LastName: "Doe",
+            State: "Delhi",
+             PrimeMinister:"narendra",
+        };
+
+        //destructing
+        try{
+            let {FirstName,LastName}=person;
+            console.log(FirstName,LastName)
+        } catch (error) {
+            console.log(error)
+        }
+        
+    </script>
+</body>
+</html>
