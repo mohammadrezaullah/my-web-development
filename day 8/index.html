@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .box{
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+        }
+        .box:hover{
+            background-color: black;
+        }
+
+    </style> 
+
+    <style>
+        .changebox{
+            height: 300px;
+            width: 300px;
+            background-color: yellow
+        }
+    </style>
+</head>
+<body>
+     <h1>my name is kaif</h1>
+    <div class="box"></div>
+    <br><input type="" placeholder="Change your name"
+    <h2><Hello this is <span id="username">Kaif</span></h2>
+    <button onclick="changeName()">Change The Name</button>
+
+    <script>
+        const changeName=()=>{
+            const name = window.prompt("Enter Your Name")
+            const namePlace=document.getElementById("username").innerHTML=name
+
+            const changeBox=()=>{
+                const box = document.getElementsByClassName("Box")[0].style
+                
+
+            }
+
+        }
+    </script>
+</body>
+</html>

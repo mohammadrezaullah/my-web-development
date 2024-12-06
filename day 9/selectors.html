@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section">
+    <h1 id="idSelector" class="classSelector"> Hello, world</h1>
+    <button onclick="idSelector()">Use ID</button>
+    <button onclick="classSelector()">Useclass</button>
+    <button onclick="querySelectorDemo()">Use Query</button>
+    </div>
+    <script>
+        const idSelector = () => {
+            let element=document.getElementById('idSelector')
+            console.log(element)
+            element.innerHTML="This is Kaif, I am using ID Selector"
+        }
+        const classSelector = () => {
+            document.getElementsByClassName('classSelector')[0].innerHTML="This is Kaif and I am using Class Selector"
+        }
+        function querySelectorDemo(){
+            document.querySelector('.classSelector').innerHTML="This is Kaif, I am using QuerySelector"
+        }
+    </script>
+
+</body>
+</html>
